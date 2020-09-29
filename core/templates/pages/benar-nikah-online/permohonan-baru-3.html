@@ -1,0 +1,245 @@
+{% extends "layouts/base-sub.html" %}
+
+{% block title %} Permohonan Kebenaran Berkahwin Online - Page 2{% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Page content -->
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <p class="mb-0">
+          Sila masukkan maklumat mengenai pemohon dan pasangan serta maklumat<br>
+          <small>Ruang maklumat yang bertanda '*' adalah WAJIB diisi bagi setiap pasangan</small>
+        </p>
+      </div>
+    </div>
+    <div class="card" id="section-form">
+      <div class="card-header">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h3 class="mb-0">Permohonan Kebenaran Berkahwin Online</h3>
+          </div>
+          <div class="col-4 text-right">
+            <a href="#!" class="btn btn-sm btn-primary">Bantuan</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="">
+          <div>
+            <div class="row text-center mb-2 mx-0">
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Pemohon Lelaki
+                <span class="d-md-none d-block">(1/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Pemohon Perempuan
+                <span class="d-md-none d-block">(2/5)</span>
+              </div>
+              <div class="col-md col-12 text-primary">
+                Maklumat Kebenaran
+                <span class="d-md-none d-block">(3/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Maklumat Wali
+                <span class="d-md-none d-block">(4/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Hantar
+                <span class="d-md-none d-block">(5/5)</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Tarikh Cadangan Berkahwin*</label>
+                <input class="form-control" type="date" id="example-date-input" placeholder="HH/MM/TTTT" required="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Negara Cadangan Berkahwin*</label>
+                <select class="form-control" id="exampleFormControlSelect1" required="">
+                  <option selected>Malaysia</option>
+                  <option>Singapura</option>
+                  <option>Indonesia</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Negeri Cadangan Berkahwin*</label>
+                <select class="form-control" id="exampleFormControlSelect1" required="">
+                  <option selected disabled>Sila Pilih...</option>
+                  <option>Johor</option>
+                  <option>Kedah</option>
+                  <option>Kelantan</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Jenis Tempat Nikah*</label>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" id="kediaman-perempuan" type="checkbox">
+                  <label class="custom-control-label" for="kediaman-perempuan">Kediaman Perempuan</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" id="kediaman-lelaki" type="checkbox">
+                  <label class="custom-control-label" for="kediaman-lelaki">Kediaman Lelaki</label>
+                </div>
+                <select class="form-control" id="exampleFormControlSelect1" required="">
+                  <option selected disabled>Sila Pilih...</option>
+                  <option>Kediaman</option>
+                  <option>Masjid</option>
+                  <option>Surau</option>
+                  <option>Hotel</option>
+                  <option>Dewan</option>
+                  <option>JAIN / PAID</option>
+                  <option>LAIN-LAIN</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Alamat Tempat Nikah*</label>
+                <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 1" required="">
+                <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 2">
+                <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 3">
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Poskod</label>
+                <input type="text" id="input-username" class="form-control" placeholder="Poskod">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Bandar</label>
+                <input type="text" id="input-username" class="form-control" placeholder="Bandar">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Daerah*</label>
+                <select class="form-control" id="exampleFormControlSelect1" required="">
+                  <option selected disabled>Sila Pilih...</option>
+                  <option>Pasir Puteh</option>
+                  <option>Bachok</option>
+                  <option>Kota Bharu</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Kariah*</label>
+                <select class="form-control" id="exampleFormControlSelect1" required="">
+                  <option selected disabled>Sila Pilih...</option>
+                  <option>Pasir Puteh</option>
+                  <option>Bachok</option>
+                  <option>Kota Bharu</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <!-- Maklumat Mas Kahwin / Hantaran -->
+          <h6 class="heading-small text-muted mb-4">MAKLUMAT MAS KAHWIN / HANTARAN</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Mas Kahwin</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Mas Kahwin">
+                  <span><small>NOTE: Nyatakan mas kahwin seperti Duit Tunai dan/atau Barangan</small></span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Pemberian Lain</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Mas Kahwin">
+                  <span><small>NOTE: Nyatakan apa-apa pemberian lain bagi hantaran</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+
+          <!-- Status Lelaki -->
+          <h6 class="heading-small text-muted mb-4">STATUS LELAKI</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Tarikh Pemeriksaan Kesihatan</label>
+                  <input class="form-control" type="date" id="example-date-input" placeholder="HH/MM/TTTT" required="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Keputusan Pemeriksaan Kesihatan</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>REAKTIF</option>
+                    <option>TIDAK REAKTIF</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+
+          <!-- Status Perempuan -->
+          <h6 class="heading-small text-muted mb-4">STATUS PEREMPUAN</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Tarikh Pemeriksaan Kesihatan</label>
+                  <input class="form-control" type="date" id="example-date-input" placeholder="HH/MM/TTTT" required="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Keputusan Pemeriksaan Kesihatan</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>REAKTIF</option>
+                    <option>TIDAK REAKTIF</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+        <hr class="my-4" />
+        <div class="d-flex float-right">
+          <a href="{% url 'bno_baru_2' %}#section-form" class="btn btn-primary"><i class="fas fa-chevron-circle-left"></i> Kembali</a>
+          <a href="{% url 'bno_baru_4' %}#section-form" class="btn btn-primary">Seterusnya <i class="fas fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}

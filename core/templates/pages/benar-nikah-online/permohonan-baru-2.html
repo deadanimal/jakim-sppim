@@ -1,0 +1,459 @@
+{% extends "layouts/base-sub.html" %}
+
+{% block title %} Permohonan Kebenaran Berkahwin Online - Page 2{% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Page content -->
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <p class="mb-0">
+          Sila masukkan maklumat mengenai pemohon dan pasangan serta maklumat<br>
+          <small>Ruang maklumat yang bertanda '*' adalah WAJIB diisi bagi setiap pasangan</small>
+        </p>
+      </div>
+    </div>
+    <div class="card" id="section-form">
+      <div class="card-header">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h3 class="mb-0">Permohonan Kebenaran Berkahwin Online</h3>
+          </div>
+          <div class="col-4 text-right">
+            <a href="#!" class="btn btn-sm btn-primary">Bantuan</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="">
+          <div>
+            <div class="row text-center mb-2 mx-0">
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Pemohon Lelaki
+                <span class="d-md-none d-block">(1/5)</span>
+              </div>
+              <div class="col-md col-12 text-primary">
+                Pemohon Perempuan
+                <span class="d-md-none d-block">(2/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Maklumat Kebenaran
+                <span class="d-md-none d-block">(3/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Maklumat Wali
+                <span class="d-md-none d-block">(4/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Hantar
+                <span class="d-md-none d-block">(5/5)</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <form>
+          <h6 class="heading-small text-muted mb-4"></h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Kad Pengenalan (Baru)*</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Kad Pengenalan Baru" required>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Gambar Pemohon</label>
+                  <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="gambar" lang="en" required>
+                    <label class="custom-file-label" for="gambar"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <!-- Maklumat Pemohon -->
+          <h6 class="heading-small text-muted mb-4">MAKLUMAT PEMOHON</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Nama Mengikut Kad Pengenalan/Pasport*</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Nama" required="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Tarikh Lahir*</label>
+                  <input class="form-control" type="date" id="example-date-input" placeholder="HH/MM/TTTT" required="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Umur</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Umur" disabled>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Tempat Lahir</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Tempat Lahir">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Bangsa*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected>Melayu</option>
+                    <option>Cina</option>
+                    <option>India</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Warganegara*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected>Malaysia</option>
+                    <option>Singapura</option>
+                    <option>Indonesia</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Negara Asal</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Malaysia</option>
+                    <option>Singapura</option>
+                    <option>Indonesia</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Status*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>DARA</option>
+                    <option>JANDA</option>
+                    <option>BALU</option>
+                    <option>THAYYIB</option>
+                    <option>BERSUAMI</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Pendidikan Tertinggi*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>DOKTOR FALSAFAH (Ph. D)</option>
+                    <option>SARJANA</option>
+                    <option>SARJANA MUDA DENGAN KEPUJIAN</option>
+                    <option>SARJANA MUDA</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Tarikh Masuk Islam</label>
+                  <input class="form-control" type="date" id="example-date-input" placeholder="HH/MM/TTTT">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">OKU</label>
+                    <div class="custom-control custom-checkbox mb-3">
+                      <input class="custom-control-input" id="oku" type="checkbox">
+                      <label class="custom-control-label" for="oku">Ya</label>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <!-- Maklumat MUALLAF -->
+          <h6 class="heading-small text-muted mb-4">MAKLUMAT MUALLAF (Jika Berkaitan)</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Muallaf*</label>
+                  <div>
+                    <div class="d-inline-flex">
+                      <div class="custom-control custom-radio mb-1">
+                        <input name="muallaf" class="custom-control-input" id="muallaf-1" type="radio">
+                        <label class="custom-control-label" for="muallaf-1">Ya</label>
+                      </div>
+                      <div class="custom-control custom-radio mb-1 ml-3">
+                        <input name="muallaf" class="custom-control-input" id="muallaf-2" type="radio">
+                        <label class="custom-control-label" for="muallaf-2">Tidak</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Jenis Muallaf*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>Jenis 1</option>
+                    <option>Jenis 2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Tarikh Masuk Islam</label>
+                  <input class="form-control" type="date" id="example-date-input" placeholder="HH/MM/TTTT">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">No. Pendaftaran Islam*</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Nama" required="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Negeri Masuk Islam*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>Johor</option>
+                    <option>Kedah</option>
+                    <option>Kelantan</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          <!-- Alamat Tetap -->
+          <h6 class="heading-small text-muted mb-4">ALAMAT TETAP</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Alamat Mengikut Kad Pengenalan/Pasport *</label>
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 1" required="">
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 2">
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 3">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Poskod*</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Poskod" required="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Bandar</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Bandar">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Daerah*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>Pasir Puteh</option>
+                    <option>Bachok</option>
+                    <option>Kota Bharu</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Negeri*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>Johor</option>
+                    <option>Kedah</option>
+                    <option>Kelantan</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+          <!-- Alamat Tempat Tinggal -->
+          <h6 class="heading-small text-muted mb-4">ALAMAT TEMPAT TINGGAL</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Alamat Mengikut Kad Pengenalan/Pasport *</label>
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input class="custom-control-input" id="seperti-alamat-tetap" type="checkbox">
+                    <label class="custom-control-label" for="seperti-alamat-tetap">Seperti Alamat Tetap</label>
+                  </div>
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 1" required="">
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 2">
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 3">
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Poskod*</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Poskod" required="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Bandar</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Bandar">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Daerah*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>Pasir Puteh</option>
+                    <option>Bachok</option>
+                    <option>Kota Bharu</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Kariah*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>Pasir Puteh</option>
+                    <option>Bachok</option>
+                    <option>Kota Bharu</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Negeri*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option >Johor</option>
+                    <option>Kedah</option>
+                    <option>Kelantan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">No. Tel.*</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="No. Tel." required="">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">E-mail*</label>
+                  <input type="email" id="input-username" class="form-control" placeholder="E-mail" required="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4" />
+          <!-- Maklumat Pekerjaan -->
+          <h6 class="heading-small text-muted mb-4">MAKLUMAT PEKERJAAN</h6>
+          <div class="pl-lg-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Jenis Pekerjaan*</label>
+                  <select class="form-control" id="exampleFormControlSelect1" required="">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option>GLC</option>
+                    <option>KERAJAAN</option>
+                    <option>SWASTA</option>
+                    <option>SENDIRI</option>
+                    <option>BADAN BERKANUN</option>
+                    <option>PELAJAR</option>
+                    <option>PESARA</option>
+                    <option>TIDAK BEKERJA</option>
+                    <option>LAIN-LAIN</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Pekerjaan</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Pekerjaan">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Pendapatan (RM)</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Pendapatan (RM)">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Alamat Tempat Bekerja</label>
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 1">
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 2">
+                  <input type="text" id="input-username" class="form-control mb-2" placeholder="Alamat 3">
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Poskod</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Poskod">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Bandar</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="Bandar">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">Negeri*</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected disabled>Sila Pilih...</option>
+                    <option >Johor</option>
+                    <option>Kedah</option>
+                    <option>Kelantan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="input-username">No. Tel.</label>
+                  <input type="text" id="input-username" class="form-control" placeholder="No. Tel.">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <hr class="my-4" />
+        <div class="d-flex float-right">
+          <a href="{% url 'bno_baru_1' %}#section-form" class="btn btn-primary"><i class="fas fa-chevron-circle-left"></i> Kembali</a>
+          <a href="{% url 'bno_baru_3' %}#section-form" class="btn btn-primary">Seterusnya <i class="fas fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}

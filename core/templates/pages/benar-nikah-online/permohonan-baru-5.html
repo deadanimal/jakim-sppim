@@ -1,0 +1,96 @@
+{% extends "layouts/base-sub.html" %}
+
+{% block title %} Permohonan Kebenaran Berkahwin Online - Page 2{% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Page content -->
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <p class="mb-0">
+          Sila masukkan maklumat mengenai pemohon dan pasangan serta maklumat<br>
+          <small>Ruang maklumat yang bertanda '*' adalah WAJIB diisi bagi setiap pasangan</small>
+        </p>
+      </div>
+    </div>
+    <div class="card" id="section-form">
+      <div class="card-header">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h3 class="mb-0">Permohonan Kebenaran Berkahwin Online</h3>
+          </div>
+          <div class="col-4 text-right">
+            <a href="#!" class="btn btn-sm btn-primary">Bantuan</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="">
+          <div>
+            <div class="row text-center mb-2 mx-0">
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Pemohon Lelaki
+                <span class="d-md-none d-block">(1/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Pemohon Perempuan
+                <span class="d-md-none d-block">(2/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Maklumat Kebenaran
+                <span class="d-md-none d-block">(3/5)</span>
+              </div>
+              <div class="col-md col-12 text-muted d-md-block d-none">
+                Maklumat Wali
+                <span class="d-md-none d-block">(4/5)</span>
+              </div>
+              <div class="col-md col-12 text-primary">
+                Hantar
+                <span class="d-md-none d-block">(5/5)</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="card">
+          <div class="card-header text-center">
+            <p>Permohonan Kebenaran Berkahwin <strong>MUHAMMAD ALI BIN AHMAD</strong> dan <strong>SITI SARAH BINTI IDRIS</strong></p>
+            <p class="mb-0">Cadangan tarikh pernikahan pada <strong>24-10-2020</strong> di <strong>JOHOR BAHRU, JOHOR</strong></p>
+          </div>
+        </div>
+        <div class="card bg-gradient-primary text-white">
+            <!-- Card header -->
+            <div class="card-header bg-gradient-primary text-white">
+              <!-- Title -->
+              <h5 class="h3 mb-0 text-white">MAKLUMAT PERAKUAN</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Saya mengaku bahawa segala maklumat yang terkandung dalam permohonan ini adalah benar dan sekiranya maklumat ini palsu, saya telah melakukan kesalahan dan boleh diambil tindakan di bawah undang-undang yang telah ditetapkan. Jabatan Agama Islam Negeri (JAIN) tidak bertanggungjawab atas kerugian atau pemalsuan maklumat yang diberikan oleh saya dan saya tidak akan mengambil tindakan undang-undang.</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-danger text-center">Saya Bersetuju</a>
+          </div>
+        <hr class="my-4" />
+        <div class="d-flex float-right">
+          <a href="{% url 'bno_baru_4' %}#section-form" class="btn btn-primary"><i class="fas fa-chevron-circle-left"></i> Kembali</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}

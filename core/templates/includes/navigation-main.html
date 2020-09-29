@@ -1,0 +1,93 @@
+
+  <!-- Navbar -->
+  <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
+    <div class="container">
+      <div class="d-inline-flex align-items-center">
+        <a class="navbar-brand text-white" href="/">
+          <img src="/static/assets/img/brand/white.png" style="height: 100px;">
+        </a>
+        {% comment %} <span class="text-white">SPPIM</span> {% endcomment %}
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse navbar-custom-collapse collapse" id="navbar-collapse">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="/">
+                <img src="/static/assets/img/brand/blue.png" style="height: 100px;">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="{% url 'home' %}" class="nav-link">
+                <span class="nav-link-inner--text">Utama</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Perkhidmatan SPPIM
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'benar_nikah_online' %}">Benar Nikah Online</a>
+                <a class="dropdown-item" href="{% url 'pra_perkahwinan_online' %}">Pra-Perkahwinan Online</a>
+                <a class="dropdown-item" href="{% url 'ncr_luar_negara' %}">NCR Luar Negara</a>
+                <a class="dropdown-item" href="{% url 'rundingcara_online' %}">Rundingcara Online</a>
+                <a class="dropdown-item" href="{% url 'rujuk_online' %}">Rujuk Online</a>
+                <a class="dropdown-item" href="{% url 'cerai_online' %}">Cerai Online</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rujukan
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'senarai_paid' %}">Senarai PAID</a>
+                <a class="dropdown-item" href="{% url 'panduan_perkahwinan' %}">Panduan Perkahwinan</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'aduan_sppim' %}" class="nav-link">
+                <span class="nav-link-inner--text">Aduan</span>
+              </a>
+            </li>
+
+            {% comment %} <li class="nav-item">
+              <a href="{% url 'login' %}" class="nav-link">
+                <span class="nav-link-inner--text">Login</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'register' %}" class="nav-link">
+                <span class="nav-link-inner--text">Register</span>
+              </a>
+            </li> {% endcomment %}
+            
+        </ul>
+        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+          <li class="nav-item ml-lg-4">
+            {% if request.user.is_authenticated %}
+            <a href="{% url 'dashboard' %}" class="btn btn-neutral btn-icon">
+              <span class="nav-link-inner--text">Ke Dashboard <i class="fas fa-chart-bar"></i></span>
+            </a>
+            {% else %}
+            <a href="{% url 'login' %}" class="btn btn-neutral btn-icon">
+              <span class="nav-link-inner--text">Log Masuk<br><small>Untuk Kakitangan<small></span>
+            </a>
+            {% endif %}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-gradient-primary p-8">
+  </div><div class="mt--8"></div>

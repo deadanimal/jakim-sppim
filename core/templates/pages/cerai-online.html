@@ -1,0 +1,75 @@
+{% extends "layouts/base-sub.html" %}
+
+{% block title %} Permohonan Cerai Online {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Page content -->
+  <div class="container">
+			<div class="row">
+        <div class="col-lg-8">
+          <div class="card bg-primary text-white">
+            <!-- Card header -->
+            <div class="card-header bg-primary text-white">
+              <!-- Title -->
+              <h5 class="h3 mb-0 text-white">Permohonan Cerai Online</h5>
+            </div>
+            <div class="card-body">
+              <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card bg-white">
+            <!-- Card header -->
+            <div class="card-header">
+              <!-- Title -->
+              <h5 class="h3 mb-0">Carian</h5>
+            </div>
+            <div class="card-body">
+              <form action="" method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="form-control-label w-100" for="validationDefault01">No Pengenalan @ Email</label>
+                      <input type="text" class="form-control" id="validationDefault01" placeholder="No Pengenalan @ Email" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="form-control-label w-100" for="validationDefault01">No Rujukan Permohonan</label>
+                      <input type="text" class="form-control" id="validationDefault01" placeholder="No Rujukan Permohonan" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary w-75" type="submit"><i class="fas fa-search"></i> Cari</button>
+                </div>
+              </form>
+              <p class="text-center mt-3"><a href="{% url 'lupa_no_rujukan' %}">Lupa No. Rujukan</a></p>
+              <hr>
+              <p class="text-sm text-center">Atau klik di bawah untuk permohonan baru</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary w-75">Permohonan Baru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}

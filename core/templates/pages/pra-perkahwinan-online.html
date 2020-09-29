@@ -1,0 +1,67 @@
+{% extends "layouts/base-sub.html" %}
+
+{% block title %} Pendaftaran PraPerkahwinan Online {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Page content -->
+  <div class="container">
+			<div class="row">
+        <div class="col-lg-8">
+          <div class="card bg-primary text-white">
+            <!-- Card header -->
+            <div class="card-header bg-primary text-white">
+              <!-- Title -->
+              <h5 class="h3 mb-0 text-white">Pendaftaran PraPerkahwinan Online</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text mb-4">Selamat Datang ke PraPerkahwinan Online.Pendaftaran PraPerkahwinan Online adalah satu inisiatif Jakim dengan kerjasama Jabatan Agama Islam negeri - negeri bagi tujuan memberikan kemudahan kepada pasangan yang ingin melangsungkan perkahwinan membuat pendaftaran kursus PraPerkahwinan secara online.</p>
+              <p>Pemohon boleh melakukan semakan jadual kursus bagi maklumat tarikh, masa dan tempat serta maklumat kekosongan kursus untuk pendaftaran. Pendaftaran kursus PraPerkahwinan secara online pada masa ini hanya meliputi permohonan yang dibuat di Negeri Sembilan, Melaka dan Perlis namun kemudahan ini akan terus diperluaskan bagi merangkumi negeri-negeri lain di dalam masa yang terdekat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card bg-white">
+            <!-- Card header -->
+            <div class="card-header">
+              <!-- Title -->
+              <h5 class="h3 mb-0">Carian Pendaftaran</h5>
+            </div>
+              <div class="card-body">
+                <form action="" method="POST">
+                  {% csrf_token %}
+                  <div class="form-row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="form-control-label w-100" for="validationDefault01">No Pengenalan @ Email</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="No Pengenalan @ Email" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-primary w-75" type="submit"><i class="fas fa-search"></i> Cari</button>
+                  </div>
+                </form>
+                <hr>
+                <p class="text-sm text-center">Atau klik di bawah untuk pendaftaran baru</p>
+                <div class="text-center">
+                  <a href="{% url 'ppo_baru_1' %}" class="btn btn-primary w-75">Daftar Kursus</a>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}

@@ -1,0 +1,60 @@
+{% extends "layouts/base-sub.html" %}
+
+{% block title %} Kebenaran Berkahwin Online - Carian {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Page content -->
+  <div class="container">
+			<div class="row">
+        <div class="col-lg-12">
+          <div class="card bg-primary text-white">
+            <!-- Card header -->
+            <div class="card-header bg-primary text-white">
+              <!-- Title -->
+              <h5 class="h3 mb-0 text-white">Kebenaran Berkahwin Online - Carian</h5>
+            </div>
+            <div class="card-body">
+              <table class="table align-items-center table-flush bg-secondary">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Pemohon</th>
+                    <th>Email</th>
+                    <th>No. Telefon</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-user">
+                      <img src="/static/assets/img/theme/team-1.jpg" class="avatar rounded-circle mr-3">
+                      <b>Abu Bakar bin Omar</b>
+                    </td>
+                    <td>
+                      <span class="text-muted">abubakar@email.com</span>
+                    </td>
+                    <td>
+                      <span class="text-muted">012-2122322</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Modals -->
+  {% include "modals/modal-bno-baru.html" %}
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}

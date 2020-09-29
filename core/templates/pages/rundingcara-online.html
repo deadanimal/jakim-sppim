@@ -1,0 +1,78 @@
+{% extends "layouts/base-sub.html" %}
+
+{% block title %} Aduan Rundingcara Online {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Page content -->
+  <div class="container">
+			<div class="row">
+        <div class="col-lg-8">
+          <div class="card bg-primary text-white">
+            <!-- Card header -->
+            <div class="card-header bg-primary text-white">
+              <!-- Title -->
+              <h5 class="h3 mb-0 text-white">Aduan Rundingcara Online</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Selamat Datang ke Aduan Rundingcara Online.</p>
+              <p class="card-text">Rundingcara Online adalah satu inisiatif JAKIM dengan kerjasama Jabatan Agama Islam Negeri - negeri bagi tujuan memberikan kemudahan kepada individu atau pasangan yang ingin mendapatkan khidmat nasihat kekeluargaan secara online.</p>
+              <p class="card-text">Pemohon juga boleh mendapatkan temujanji sesi rundingcara secara bersemuka dengan pegawai rundingcara di Jabatan Agama Islam Negeri, Pejabat Agama Islam Daerah. Permohonan Rundingcara melalui online pada masa ini hanya meliputi Negeri Sembilan, Melaka, Perlis, Kedah, Perak dan Wilayah Persekutuan (Kuala Lumpur, Putrajaya dan Labuan).</p>
+              
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card bg-white">
+            <!-- Card header -->
+            <div class="card-header">
+              <!-- Title -->
+              <h5 class="h3 mb-0">Carian</h5>
+            </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="form-control-label w-100" for="validationDefault01">No Pengenalan</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="No Pengenalan" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="form-control-label w-100" for="validationDefault01">No Rujukan Aduan</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="No Rujukan Aduan" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-primary w-75" type="submit"><i class="fas fa-search"></i> Cari</button>
+                  </div>
+                </form>
+                <hr>
+                <p class="text-sm text-center">Atau klik di bawah untuk aduan baru</p>
+                <div class="text-center">
+                  <button class="btn btn-primary w-75">Aduan Baru</button>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}

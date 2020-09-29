@@ -1,0 +1,80 @@
+{% extends "layouts/base-sub.html" %}
+
+{% block title %} Permohonan Kebenaran Berkahwin Online {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <!-- Page content -->
+  <div class="container">
+			<div class="row">
+        <div class="col-lg-12">
+          <div class="card bg-white">
+            <!-- Card header -->
+            <div class="card-header">
+              <!-- Title -->
+              <h5 class="h3 mb-0">Lupa No. Rujukan</h5>
+            </div>
+              <div class="card-body">
+                <form>
+                  <h3>Pengantin Lelaki</h3>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="validationDefault01">No Pengenalan</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="No Pengenalan" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="validationDefault01">Email</label>
+                        <input type="email" class="form-control" id="validationDefault01" placeholder="Email" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Pengantin Perempuan</h3>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="validationDefault01">No Pengenalan</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="No Pengenalan" required="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="validationDefault01">Email</label>
+                        <input type="email" class="form-control" id="validationDefault01" placeholder="Email" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <h3>Tarikh Cadangan Berkahwin</h3>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" type="date" id="example-date-input" placeholder="HH/MM/TTTT" required="">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Hantar</button>
+                </form>
+                <hr>
+                <div class="text-center">
+                  <a href="{% url 'benar_nikah_online' %}" class="btn btn-warning">Kembali ke Laman Utama</a>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+  <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
+{% endblock javascripts %}
