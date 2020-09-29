@@ -20,6 +20,7 @@ urlpatterns = [
     path('dashboard/statistik/7/', views.d_statistik_7, name='d_statistik_7'),
     path('dashboard/statistik/8/', views.d_statistik_8, name='d_statistik_8'),
     path('dashboard/statistik/9/', views.d_statistik_9, name='d_statistik_9'),
+    path('dashboard/statistik/10/', views.d_statistik_10, name='d_statistik_10'),
     path('dashboard/senarai-staf/', views.senarai_staf, name='senarai_staf'),
     path('dashboard/senarai-orang-awam/', views.senarai_orang_awam, name='senarai_orang_awam'),
     path('dashboard/rekod-kaji-selidik/', views.rekod_kaji_selidik, name='rekod_kaji_selidik'),

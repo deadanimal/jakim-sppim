@@ -44,6 +44,9 @@ def d_statistik_8(request):
 @login_required(login_url="/login/")
 def d_statistik_9(request):
     return render(request, "pages/dashboard/laporan/statistik-9.html")
+@login_required(login_url="/login/")
+def d_statistik_10(request):
+    return render(request, "pages/dashboard/laporan/statistik-10.html")
 
 @login_required(login_url="/login/")
 def senarai_staf(request):
