@@ -1,4 +1,4 @@
-# [Django Dashboard Argon PRO](https://appseed.us/admin-dashboards/django-dashboard-argon-pro)
+# [[PROTO-0101] PMO - SPPIM]
 
 > Commercial product - **Django Dashboard** provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator) - Features:
 
