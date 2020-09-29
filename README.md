@@ -1,2 +1,2 @@
-# jakim-sppim
+# pmo-sppim
 Prototype SPPIM
