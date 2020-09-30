@@ -2,13 +2,11 @@
   <!-- Navbar -->
   <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
     <div class="container">
-      <div class="d-inline-flex align-items-center">
-        <a class="navbar-brand text-white" href="/">
+      <div class="d-inline-flex align-items-center w-100">
+        <a class="navbar-brand text-white mr-0" href="/">
           <img src="/static/assets/img/brand/white.png" style="height: 100px;">
         </a>
-        <li class="nav-item d-md-none d-block">
-          <img src="/static/assets/img/brand/jata-negara.png" style="height: 60px;">
-        </li>
+        <h4 class="text-white">Sistem Pengurusan Perkahwinan Islam Malaysia</h4>
         {% comment %} <span class="text-white">SPPIM</span> {% endcomment %}
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -17,10 +15,13 @@
       <div class="navbar-collapse navbar-custom-collapse collapse" id="navbar-collapse">
         <div class="navbar-collapse-header">
           <div class="row">
-            <div class="col-6 collapse-brand">
+            <div class="col-6 d-inline-flex align-items-center collapse-brand">
               <a href="/">
                 <img src="/static/assets/img/brand/blue.png" style="height: 100px;">
               </a>
+              <li class="nav-item d-lg-none d-block">
+                <img src="/static/assets/img/brand/jata-negara.png" style="height: 60px;">
+              </li>
             </div>
             <div class="col-6 collapse-close">
               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,16 +78,16 @@
             
         </ul>
         <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-          <li class="nav-item ml-lg-4 d-md-block d-none">
+          <li class="nav-item ml-lg-4 d-lg-block d-none">
             <img src="/static/assets/img/brand/jata-negara.png" style="height: 70px;">
           </li>
           <li class="nav-item ml-lg-4">
             {% if request.user.is_authenticated %}
-            <a href="{% url 'dashboard' %}" class="btn btn-neutral btn-icon">
+            <a href="{% url 'dashboard' %}" class="btn btn-neutral btn-icon" style="width:145px;">
               <span class="nav-link-inner--text">Ke Dashboard <i class="fas fa-chart-bar"></i></span>
             </a>
             {% else %}
-            <a href="{% url 'login' %}" class="btn btn-neutral btn-icon">
+            <a href="{% url 'login' %}" class="btn btn-neutral btn-icon" style="width:145px;">
               <span class="nav-link-inner--text">Log Masuk<br><small>Untuk Kakitangan<small></span>
             </a>
             {% endif %}
